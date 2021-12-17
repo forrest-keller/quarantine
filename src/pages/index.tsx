@@ -8,15 +8,36 @@ import {
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import documentsImage from "../../public/images/documents.jpg";
-import { Poem } from "../components/poem";
+import greenSpotImage from "../../public/images/green-spot.jpg";
+import { Poem, PoemProps } from "../components/poem";
 
-const docmentsImageAlt = "Image of documents on a wooden floor";
-const documentsTitle = "Documents";
-const documentsText = `How can they reduce a person to numbers?
+const poems: PoemProps[] = [
+  {
+    title: "Documents",
+    imageAlt: "Image of documents on a wooden floor",
+    imageSrc: documentsImage,
+    number: 1,
+    text: `How can they reduce a person to numbers?
 Cold hands from above guide both reflections on the glass pane.
 Does either party know the significance of what they hold?
 Beneath the pulp, ink loses figure, diminished to reality.
-The stamp marks: Approved.`;
+The stamp marks: Approved.`,
+  },
+  {
+    title: "Green Spot",
+    imageAlt: "Image of two glasses with leaves in them.",
+    imageSrc: greenSpotImage,
+    number: 2,
+    text: `Gray on brown on white on beige,
+With all necessities tucked away.
+Food brought forth to keep me going,
+But wait! That herb stopped me for a moment.
+Leafy, long, intricate and green,
+It seems to me it just can't be eat.
+So take it out, clean it, tuck it in a glass,
+Look! Now it's going to last.`,
+  },
+];
 
 const Home: NextPage = () => {
   return (
@@ -26,18 +47,23 @@ const Home: NextPage = () => {
           Quarantine
         </Heading>
       </Center>
-      <Stack gap="1em">
-        <Poem
-          title={documentsTitle}
-          number={1}
-          imageSrc={documentsImage}
-          imageAlt={docmentsImageAlt}
-        >
-          {documentsText}
-        </Poem>
+      <Stack gap="5em">
+        {poems.map((poemProps, index) => (
+          <Poem key={index} {...poemProps} />
+        ))}
+        <Center>
+          <Text
+            borderColor="red.700"
+            color="red.700"
+            borderWidth="1px"
+            padding="1em"
+          >
+            More Coming Soon...
+          </Text>
+        </Center>
       </Stack>
       <Center marginY="5em">
-        <Text color="gray.400">
+        <Text fontSize="sm" color="blackAlpha.500">
           Made by&nbsp;
           <Link href="https://forrestkeller.com" isExternal>
             Forrest Keller

@@ -16,6 +16,7 @@ import { CSSProperties, FunctionComponent } from "react";
 export interface PoemProps {
   title: string;
   number: number;
+  text: string;
   imageSrc: ImageProps["src"];
   imageAlt: string;
 }
@@ -23,9 +24,9 @@ export interface PoemProps {
 export const Poem: FunctionComponent<PoemProps> = ({
   title,
   number,
+  text,
   imageAlt,
   imageSrc,
-  children,
 }) => {
   const headingStyleProps = useBreakpointValue<CSSProperties>(
     {
@@ -45,6 +46,7 @@ export const Poem: FunctionComponent<PoemProps> = ({
   const imageProps: Partial<ImageProps> = {
     width: 500,
     height: 500,
+    objectFit: "cover",
   };
   const stackProps: StackProps = {
     direction: { base: "column", lg: "row" },
@@ -58,7 +60,10 @@ export const Poem: FunctionComponent<PoemProps> = ({
   return (
     <Stack {...stackProps}>
       <Stack {...headingStackProps}>
-        <Heading {...headingProps}>{`${number}.`}</Heading>
+        <Heading
+          color="blackAlpha.500"
+          {...headingProps}
+        >{`${number}.`}</Heading>
         <Spacer />
         <Heading {...headingProps}>{title}</Heading>
       </Stack>
@@ -66,7 +71,7 @@ export const Poem: FunctionComponent<PoemProps> = ({
         <Image src={imageSrc} alt={imageAlt} {...imageProps} />
       </Center>
       <Center>
-        <Text {...textProps}>{children}</Text>
+        <Text {...textProps}>{text}</Text>
       </Center>
     </Stack>
   );
