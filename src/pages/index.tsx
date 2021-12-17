@@ -51,9 +51,19 @@ const Home: NextPage = () => {
         {poems.map((poemProps, index) => (
           <Poem key={index} {...poemProps} />
         ))}
+        <Center>
+          <Text
+            borderColor="red.700"
+            color="red.700"
+            borderWidth="1px"
+            padding="1em"
+          >
+            More Coming Soon...
+          </Text>
+        </Center>
       </Stack>
       <Center marginY="5em">
-        <Text color="blackAlpha.500">
+        <Text fontSize="sm" color="blackAlpha.500">
           Made by&nbsp;
           <Link href="https://forrestkeller.com" isExternal>
             Forrest Keller
