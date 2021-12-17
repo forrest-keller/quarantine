@@ -52,14 +52,13 @@ export const Poem: FunctionComponent<PoemProps> = ({
   };
   const headingStackProps: StackProps = {
     direction: { lg: "column-reverse" },
-    width: { base: 500, lg: "3em" },
-    alignSelf: { base: "center", lg: "initial" },
+    width: { lg: "3em" },
   };
 
   return (
     <Stack {...stackProps}>
       <Stack {...headingStackProps}>
-        <Heading {...headingProps}>{number}</Heading>
+        <Heading {...headingProps}>{`${number}.`}</Heading>
         <Spacer />
         <Heading {...headingProps}>{title}</Heading>
       </Stack>
