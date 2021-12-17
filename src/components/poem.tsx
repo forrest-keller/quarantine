@@ -27,11 +27,14 @@ export const Poem: FunctionComponent<PoemProps> = ({
   imageSrc,
   children,
 }) => {
-  const headingStyleProps = useBreakpointValue<CSSProperties>({
-    lg: {
-      writingMode: "sideways-lr",
+  const headingStyleProps = useBreakpointValue<CSSProperties>(
+    {
+      lg: {
+        writingMode: "sideways-lr",
+      },
     },
-  });
+    "lg"
+  );
   const headingProps: HeadingProps = {
     style: headingStyleProps,
   };
