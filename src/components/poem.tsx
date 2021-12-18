@@ -31,7 +31,8 @@ export const Poem: FunctionComponent<PoemProps> = ({
   const headingStyleProps = useBreakpointValue<CSSProperties>(
     {
       lg: {
-        writingMode: "sideways-lr",
+        writingMode: "vertical-lr",
+        transform: "rotate(180deg)",
       },
     },
     "lg"
