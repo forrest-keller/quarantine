@@ -1,6 +1,7 @@
 import { PoemProps } from "../components/poem";
 import documentsImage from "../../public/images/documents.jpg";
 import greenSpotImage from "../../public/images/green-spot.jpg";
+import reflectionsImage from "../../public/images/reflections.jpg";
 
 export const poems: PoemProps[] = [
   {
@@ -27,5 +28,19 @@ Leafy, long, intricate and green,
 It seems to me it just can't be eat.
 So take it out, clean it, tuck it in a glass,
 Look! Now it's going to last.`,
+  },
+  {
+    title: "Reflections",
+    imageAlt: "Image of reflections on glass in building.",
+    imageSrc: reflectionsImage,
+    number: 3,
+    text: `I stare at reflections of worlds that must exist,
+With time to think about questions that persist.
+Like how come some glass reflects distorted views,
+While others are clear when the day comes anew?
+Like who decided where the sky began,
+Is it me when I move my head?
+Maybe if I move enough away,
+I won't see reflections, just a real gaze.`,
   },
 ];
