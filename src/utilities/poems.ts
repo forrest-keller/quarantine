@@ -2,6 +2,7 @@ import { PoemProps } from "../components/poem";
 import documentsImage from "../../public/images/documents.jpg";
 import greenSpotImage from "../../public/images/green-spot.jpg";
 import reflectionsImage from "../../public/images/reflections.jpg";
+import movementImage from "../../public/images/movement.jpg";
 
 export const poems: PoemProps[] = [
   {
@@ -42,5 +43,17 @@ Like who decided where the sky began,
 Is it me when I move my head?
 Maybe if I move enough away,
 I won't see reflections, just a real gaze.`,
+  },
+  {
+    title: "Movement",
+    imageAlt: "Top-down image of one car and a motorbike in Vietnam.",
+    imageSrc: movementImage,
+    number: 4,
+    text: `And so they move quickly forwards,
+With drive, purpose, and ambition.
+And yet I move slowly nowhere
+With wistful yearning to guide me.
+
+We live in different worlds.`,
   },
 ];
