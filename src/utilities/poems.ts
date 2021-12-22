@@ -4,11 +4,12 @@ import greenSpotImage from "../../public/images/green-spot.jpg";
 import reflectionsImage from "../../public/images/reflections.jpg";
 import movementImage from "../../public/images/movement.jpg";
 import uniformityImage from "../../public/images/uniformity.jpg";
+import evacuationPlanImage from "../../public/images/evacuation-plan.jpg";
 
 export const poems: PoemProps[] = [
   {
     title: "Documents",
-    imageAlt: "Image of documents on a wooden floor",
+    imageAlt: "Documents on a wooden floor",
     imageSrc: documentsImage,
     number: 1,
     text: `How can they reduce a person to numbers?
@@ -19,7 +20,7 @@ The stamp marks: Approved.`,
   },
   {
     title: "Green Spot",
-    imageAlt: "Image of two glasses with leaves in them.",
+    imageAlt: "Two glasses with leaves in them.",
     imageSrc: greenSpotImage,
     number: 2,
     text: `Gray on brown on white on beige,
@@ -33,7 +34,7 @@ Look! Now it's going to last.`,
   },
   {
     title: "Reflections",
-    imageAlt: "Image of reflections on glass in building.",
+    imageAlt: "Reflections on glass in building.",
     imageSrc: reflectionsImage,
     number: 3,
     text: `I stare at reflections of worlds that must exist,
@@ -47,7 +48,7 @@ I won't see reflections, just a real gaze.`,
   },
   {
     title: "Movement",
-    imageAlt: "Top-down image of one car and a motorbike in Vietnam.",
+    imageAlt: "Top-down view of one car and a motorbike in Vietnam.",
     imageSrc: movementImage,
     number: 4,
     text: `And so they move quickly forwards,
@@ -59,7 +60,7 @@ We live in different worlds.`,
   },
   {
     title: "Uniformity",
-    imageAlt: "Image of the intersection between wooden boards on a wall.",
+    imageAlt: "Side view of intersection between wooden boards on a wall.",
     imageSrc: uniformityImage,
     number: 5,
     text: `It appears the rooms are uniform,
@@ -67,5 +68,19 @@ The same table, curtain, shelf.
 But no, it's not all to a norm,
 Says the crack that's asking for help.
 Maybe, he thinks, each room is unique to itself.`,
+  },
+  {
+    title: "Evacuation Plan",
+    imageAlt: "Hotel evacuation plan hung on wall.",
+    imageSrc: evacuationPlanImage,
+    number: 6,
+    text: `Sit
+Wait
+Stare
+Start Thinking
+Stop Thinking
+Do Something
+Sleep
+Leave`,
   },
 ];
