@@ -3,6 +3,7 @@ import documentsImage from "../../public/images/documents.jpg";
 import greenSpotImage from "../../public/images/green-spot.jpg";
 import reflectionsImage from "../../public/images/reflections.jpg";
 import movementImage from "../../public/images/movement.jpg";
+import uniformityImage from "../../public/images/uniformity.jpg";
 
 export const poems: PoemProps[] = [
   {
@@ -55,5 +56,16 @@ And yet I move slowly nowhere
 With wistful yearning to guide me.
 
 We live in different worlds.`,
+  },
+  {
+    title: "Uniformity",
+    imageAlt: "Image of the intersection between wooden boards on a wall.",
+    imageSrc: uniformityImage,
+    number: 5,
+    text: `It appears the rooms are uniform,
+The same table, curtain, shelf.
+But no, it's not all to a norm,
+Says the crack that's asking for help.
+Maybe, he thinks, each room is unique to itself.`,
   },
 ];
