@@ -69,7 +69,12 @@ export const Poem: FunctionComponent<PoemProps> = ({
         <Heading {...headingProps}>{title}</Heading>
       </Stack>
       <Center>
-        <Image src={imageSrc} alt={imageAlt} {...imageProps} />
+        <Image
+          placeholder="blur"
+          src={imageSrc}
+          alt={imageAlt}
+          {...imageProps}
+        />
       </Center>
       <Center>
         <Text {...textProps}>{text}</Text>

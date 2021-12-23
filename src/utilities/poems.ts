@@ -5,6 +5,7 @@ import reflectionsImage from "../../public/images/reflections.jpg";
 import movementImage from "../../public/images/movement.jpg";
 import uniformityImage from "../../public/images/uniformity.jpg";
 import evacuationPlanImage from "../../public/images/evacuation-plan.jpg";
+import stillSmilingImage from "../../public/images/still-smiling.jpg";
 
 export const poems: PoemProps[] = [
   {
@@ -82,5 +83,19 @@ Stop Thinking
 Do Something
 Sleep
 Leave`,
+  },
+  {
+    title: "Still Smiling",
+    imageAlt: "Snowman figurine smiling on windowsill.",
+    imageSrc: stillSmilingImage,
+    number: 7,
+    text: `The small star
+nestled in one hand,
+“Come hither!” the other
+says with a stand.
+Inviting me to stop
+and relax for a moment,
+Oh snowman, how happy you are 
+to smile without movement.`,
   },
 ];
