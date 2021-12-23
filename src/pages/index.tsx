@@ -57,9 +57,6 @@ const Home: NextPage = () => {
         {poems.map((poemProps, index) => (
           <Poem key={index} {...poemProps} />
         ))}
-        <Center>
-          <Text {...comingSoonTextProps}>More Days to Come...</Text>
-        </Center>
       </Stack>
       <Center {...centerSectionProps}>
         <Text {...footerTextProps}>
